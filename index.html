@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nadya Syafwa Davina | Network Engineer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #081525;
+    color: #ffffff;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 9%;
+    background: #0c1d31;
+    border-bottom: 1px solid #193653;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: #dceafa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 9%;
+    background: radial-gradient(circle at 85% 40%, #12395d, #081525 60%);
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #38bdf8;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero p {
+    color: #b2c6dc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background: #38bdf8;
+    color: #081525;
+}
+
+.network {
+    font-size: 140px;
+    color: #38bdf8;
+    text-shadow: 0 0 35px #0284c7;
+}
+
+/* GENERAL SECTION */
+section {
+    padding: 80px 9%;
+}
+
+.title {
+    font-size: 30px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #9fb6ce;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+/* ABOUT */
+.about {
+    background: #0c1d31;
+}
+
+.about-box {
+    background: #10243a;
+    padding: 30px;
+    border: 1px solid #214363;
+    border-radius: 12px;
+    line-height: 1.9;
+    color: #c4d5e7;
+}
+
+/* SKILLS */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px;
+    background: #10243a;
+    border: 1px solid #214363;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+.skill-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #a9bfd7;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+/* PROJECT */
+.projects {
+    background: #0c1d31;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    padding: 25px;
+    background: #10243a;
+    border: 1px solid #214363;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    color: #38bdf8;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    color: #a9bfd7;
+    line-height: 1.7;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: #a9bfd7;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+    background: #0c1d31;
+    text-align: center;
+    padding: 25px;
+    color: #7893ae;
+    border-top: 1px solid #193653;
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    nav {
+        padding: 18px 5%;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .network {
+        font-size: 100px;
+    }
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .skills-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <div class="logo">NADYA.</div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+
+    <div class="hero-content">
+        <div class="tag">WELCOME TO MY PORTFOLIO</div>
+
+        <h1>
+            Hi, I'm <span>Nadya Syafwa Davina</span>
+        </h1>
+
+        <p>
+            A Computer and Telecommunication Engineering Student
+            who is passionate about networking technology.
+            Aspiring Junior Network Engineer with an interest
+            in network configuration, infrastructure, and
+            troubleshooting.
+        </p>
+
+        <a href="#about" class="btn">Explore My Profile →</a>
+    </div>
+
+    <div class="network">
+        ◈
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <h2 class="title">About Me</h2>
+
+    <p class="subtitle">
+        Get to know more about my profile and background.
+    </p>
+
+    <div class="about-box">
+        Halo! Saya <b>Nadya Syafwa Davina</b>,
+        siswi kelas 10 jurusan Teknik Komputer dan
+        Telekomunikasi (TJKT).
+
+        <br><br>
+
+        Saya memiliki ketertarikan dalam bidang teknologi,
+        khususnya jaringan komputer dan telekomunikasi.
+        Saat ini saya sedang mempelajari dasar-dasar
+        networking, konfigurasi perangkat jaringan,
+        serta troubleshooting.
+
+        <br><br>
+
+        Saya ingin terus mengembangkan pengetahuan dan
+        keterampilan di bidang jaringan komputer untuk
+        menjadi seorang Junior Network Engineer yang
+        kompeten dan profesional.
+
+        <br><br>
+
+        <b>Nama:</b> Nadya Syafwa Davina<br>
+        <b>Kelas:</b> 10<br>
+        <b>Jurusan:</b> Teknik Komputer dan Telekomunikasi<br>
+        <b>Career Goal:</b> Junior Network Engineer
+    </div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+
+    <h2 class="title">My Skills</h2>
+
+    <p class="subtitle">
+        Technical skills yang sedang saya pelajari
+        dan kembangkan.
+    </p>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>Network Fundamentals</h3>
+            <p>
+                Memahami dasar jaringan komputer,
+                LAN, WAN, dan topologi jaringan.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>IP Addressing</h3>
+            <p>
+                Mempelajari IP Address, subnet mask,
+                dan konfigurasi jaringan.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Network Devices</h3>
+            <p>
+                Mengenal fungsi router, switch,
+                access point, dan perangkat jaringan.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Cisco Packet Tracer</h3>
+            <p>
+                Mempelajari simulasi dan perancangan
+                jaringan komputer.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>Troubleshooting</h3>
+            <p>
+                Mempelajari identifikasi dan analisis
+                permasalahan jaringan.
+            </p>
+        </div>
+
+        <div class="skill-card">
+            <h3>HTML & CSS</h3>
+            <p>
+                Memahami dasar pembuatan dan desain
+                halaman website.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+
+    <h2 class="title">My Projects</h2>
+
+    <p class="subtitle">
+        Beberapa contoh proyek pembelajaran
+        di bidang teknologi jaringan.
+    </p>
+
+    <div class="project-container">
+
+        <div class="project-card">
+            <h3>Network Topology Design</h3>
+            <p>
+                Perancangan topologi jaringan sederhana
+                untuk memahami hubungan antarperangkat
+                dalam suatu jaringan komputer.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>IP Address Configuration</h3>
+            <p>
+                Praktik konfigurasi IP Address
+                dan pengenalan komunikasi antarperangkat
+                jaringan.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>LAN Network Simulation</h3>
+            <p>
+                Simulasi jaringan LAN menggunakan
+                Cisco Packet Tracer untuk mempelajari
+                konektivitas perangkat.
+            </p>
+        </div>
+
+        <div class="project-card">
+            <h3>Basic Network Troubleshooting</h3>
+            <p>
+                Praktik mengenali dan menganalisis
+                masalah koneksi pada jaringan komputer.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="title">Let's Connect</h2>
+
+    <p>
+        Thank you for visiting my portfolio.<br>
+        Keep Learning, Keep Growing, and Keep Connecting!
+    </p>
+
+    <a href="mailto:emailkamu@example.com" class="btn">
+        Contact Me
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    © 2026 Nadya Syafwa Davina.
+    All Rights Reserved.
+    <br>
+    Junior Network Engineer Portfolio
+</footer>
+
+</body>
+</html>
